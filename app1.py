@@ -39,11 +39,7 @@ def main():
     unit_of_measure_per_pack = st.number_input('unit_of_measure_per_pack')
     
     Line_Item_quantity = st.number_input('line_item_quantity')
-    
-    Pack_price = st.number_input('pack_price')
-    
-    Unit_price = st.number_input('unit_price')
-    
+
     source_names = {0:'Canada',1:'China',2:'France',3:'Germany',4:'India',5:'Ireland',6:'Italy',7:'Japan',
                    8: 'Korea',9:'Nether Lands',10:'South Africa',11:'USA',12:'United Kingdom',13:'others'}
     
