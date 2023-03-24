@@ -40,9 +40,9 @@ def main():
     
     Line_Item_quantity = st.number_input("Enter an integer:", value=0, step=1, format="%d")
 
-    Pack_price = st.number_input('pack_price', value=0.0, step=0.1)
+    Pack_price = st.number_input('pack_price')
     
-    Unit_price = st.number_input('unit_price', value=0.0, step=0.1)
+    Unit_price = st.number_input('unit_price')
 
     source_names = {0:'Canada',1:'China',2:'France',3:'Germany',4:'India',5:'Ireland',6:'Italy',7:'Japan',
                    8: 'Korea',9:'Nether Lands',10:'South Africa',11:'USA',12:'United Kingdom',13:'others'}
