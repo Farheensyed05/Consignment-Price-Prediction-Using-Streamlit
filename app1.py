@@ -36,9 +36,13 @@ def main():
     shipment_names = {0:'Air',3:'Truck',1:'Air Charter',2:'Ocean'}
     Shipment_Mode = st.selectbox('shipment_mode',shipment_names.keys(),format_func = lambda x:shipment_names[x])
     
-    unit_of_measure_per_pack = st.number_input('unit_of_measure_per_pack')
+    unit_of_measure_per_pack = st.number_input("Enter an integer:", value=0, step=1, format="%d", value_type="int")
     
-    Line_Item_quantity = st.number_input('line_item_quantity')
+    Line_Item_quantity = st.number_input("Enter an integer:", value=0, step=1, format="%d", value_type="int")
+
+    Pack_price = st.number_input('pack_price', value=0.0, step=0.1)
+    
+    Unit_price = st.number_input('unit_price', value=0.0, step=0.1)
 
     source_names = {0:'Canada',1:'China',2:'France',3:'Germany',4:'India',5:'Ireland',6:'Italy',7:'Japan',
                    8: 'Korea',9:'Nether Lands',10:'South Africa',11:'USA',12:'United Kingdom',13:'others'}
@@ -63,8 +67,8 @@ def main():
                   'shipment_mode': Shipment_Mode,
                   'unit_of_measure_per_pack': unit_of_measure_per_pack,
                   'line_item_quantity': Line_Item_quantity,
-                  'pack_price': Pack_price,
-                  'unit_price': Unit_price,
+                  'Pack_price':Pack_price ,
+                   'Unit_price':Unit_price,
                   'manufacturing_site': Source,
                   'weight_kilograms': Weight_kilograms,
                   'managed_by_others': Managed_By,
