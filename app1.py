@@ -36,9 +36,9 @@ def main():
     shipment_names = {0:'Air',3:'Truck',1:'Air Charter',2:'Ocean'}
     Shipment_Mode = st.selectbox('shipment_mode',shipment_names.keys(),format_func = lambda x:shipment_names[x])
     
-    unit_of_measure_per_pack = st.number_input("Enter an integer:", value=0, step=1, format="%d", value_type="int")
+    unit_of_measure_per_pack = st.number_input("Enter an integer:", value=0, step=1, format="%d")
     
-    Line_Item_quantity = st.number_input("Enter an integer:", value=0, step=1, format="%d", value_type="int")
+    Line_Item_quantity = st.number_input("Enter an integer:", value=0, step=1, format="%d")
 
     Pack_price = st.number_input('pack_price', value=0.0, step=0.1)
     
